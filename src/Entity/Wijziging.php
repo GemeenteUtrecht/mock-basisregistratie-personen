@@ -24,7 +24,7 @@ use ActivityLogBundle\Entity\Interfaces\StringableInterface;
  * @version    	1.0
  *
  * @link   		http//:www.conduction.nl
- * @package		Commen Ground
+ * @package		Common Ground
  * @subpackage  BRP
  * 
  *  @ApiResource( 

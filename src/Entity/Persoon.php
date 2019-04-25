@@ -8,7 +8,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use Symfony\Component\Validator\Constraints as Assert;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\Serializer\Annotation\Groups;
-use Symfony\Component\Serializer\Annotation\MaxDepth;
+// use Symfony\Component\Serializer\Annotation\MaxDepth;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use ActivityLogBundle\Entity\Interfaces\StringableInterface;
 
@@ -24,7 +24,7 @@ use ActivityLogBundle\Entity\Interfaces\StringableInterface;
  * @version    	1.0
  *
  * @link   		http//:www.conduction.nl
- * @package		Commen Ground
+ * @package		Common Ground
  * @subpackage  BRP
  * 
  *  @ApiResource( 
@@ -34,6 +34,7 @@ use ActivityLogBundle\Entity\Interfaces\StringableInterface;
  *  		"denormalizationContext"={"groups"={"write"}},
  *      	"path"="/personen",
  *  		"openapi_context" = {
+ * 				"summary" = "Haalt een verzameling van personen op"
  *  		}
  *  	},
  *  	"post"={
@@ -41,6 +42,7 @@ use ActivityLogBundle\Entity\Interfaces\StringableInterface;
  *  		"personen"={"groups"={"write"}},
  *      	"path"="/personen",
  *  		"openapi_context" = {
+ * 					"summary" = "Maak een persoon aan"
  *  		}
  *  	}
  *  },
@@ -50,6 +52,7 @@ use ActivityLogBundle\Entity\Interfaces\StringableInterface;
  *  		"denormalizationContext"={"groups"={"write"}},
  *      	"path"="/personen/{id}",
  *  		"openapi_context" = {
+ * 				"summary" = "Haalt een specifiek persoon op"
  *  		}
  *  	},
  *     "put"={
@@ -57,6 +60,7 @@ use ActivityLogBundle\Entity\Interfaces\StringableInterface;
  *  		"denormalizationContext"={"groups"={"write"}},
  *      	"path"="/personen/{id}",
  *  		"openapi_context" = {
+ * 				"summary" = "Vervang een specifiek persoon"
  *  		}
  *  	},
  *     "delete"={
@@ -64,6 +68,7 @@ use ActivityLogBundle\Entity\Interfaces\StringableInterface;
  *  		"denormalizationContext"={"groups"={"write"}},
  *      	"path"="/personen/{id}",
  *  		"openapi_context" = {
+ * 				"summary" = "Verwijder een specifiek persoon"
  *  		}
  *  	},
  *     "log"={
@@ -90,7 +95,7 @@ use ActivityLogBundle\Entity\Interfaces\StringableInterface;
  *         				"description" = "Ongeldige aanvraag"
  *         			},
  *         			"404" = {
- *         				"description" = "Huwelijk of aanvraag niet gevonden"
+ *         				"description" = "Persoon niet gevonden"
  *         			}
  *            	}            
  *         }
@@ -119,7 +124,7 @@ use ActivityLogBundle\Entity\Interfaces\StringableInterface;
  *         				"description" = "Ongeldige aanvraag"
  *         			},
  *         			"404" = {
- *         				"description" = "Huwelijk of aanvraag niet gevonden"
+ *         				"description" = "Persoon niet gevonden"
  *         			}
  *            	}            
  *         }
