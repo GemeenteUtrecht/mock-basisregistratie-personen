@@ -61,8 +61,8 @@ parameters:
               # The general endpoints  
             - name: Persoon
               description: "Dit is het object voor een natuurlijk persoon"
-            - name: Wijziging
-              description: ""
+            # - name: Wijziging
+            #   description: ""
             - name: Organisatie
               description: "De Organisatie wordt gebruikt om standaard configuraties in te regelen"  
             # - name: User
@@ -72,7 +72,7 @@ parameters:
             - name: Persoon
               tags:
               - Persoon
-              - Wijziging
+            #   - Wijziging
             - name: Organisatie
               tags:
               - Organisatie
