@@ -1233,9 +1233,6 @@ tags:
     name: Persoon
     description: 'Dit is het object voor een natuurlijk persoon'
   -
-    name: Wijziging
-    description: ''
-  -
     name: Organisatie
     description: 'De Organisatie wordt gebruikt om standaard configuraties in te regelen'
 x-tagGroups:
@@ -1243,7 +1240,6 @@ x-tagGroups:
     name: Persoon
     tags:
       - Persoon
-      - Wijziging
   -
     name: Organisatie
     tags:

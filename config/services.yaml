@@ -15,7 +15,7 @@ parameters:
                 Welkom inovator! <br>
                 Fijn dat je de tijd en moeite hebt genomen om je te verdiepen in dit component.
                 
-                # Introduction                
+                # Introductie                
                 Het BRP component is ontwikkeld voor de gemeente Utrecht en heeft als doel het simuleren van het BRP. Dit component dient alleen gebruikt te worden voor development doeleinden. 
 
 
@@ -23,9 +23,9 @@ parameters:
                 Om het voor andere partijen zo makkelijk mogenlijk te maken dit component bieden we zo veel mogenlijk informatie openbaar aan.  
                 - [datamodel als pdf](/schema/datamodel.pdf)
                 - [datamodel als mwb](/schema/datamodel.mwb)
-                - [codebase op github](https://github.com/GemeenteUtrecht/brp)
-                - [codebase als zip](https://github.com/GemeenteUtrecht/brp/archive/conduction.zip)
-                - [docker container](https://cloud.docker.com/u/huwelijksplanner/repository/docker/huwelijksplanner/brp-php)
+                - [codebase op github](https://github.com/GemeenteUtrecht/mock-basisregistratie-personen)
+                - [codebase als zip](https://github.com/GemeenteUtrecht/mock-basisregistratie-personen/master.zip)
+                - [docker container](https://hub.docker.com/r/huwelijksplanner/brp-component)
                 - [online demo](http://brp.demo.zaakonline.nl/)
 
                 # OpenAPI Specification, Cross-Origin Resource Sharing en linked Data
@@ -34,7 +34,7 @@ parameters:
 
                 # Authenticatie
 
-                Trouwplanner heeft twee vormen van authenticatie:
+                De BRP mock heeft twee vormen van authenticatie:
                   - API Key
                   - OAuth2
                 OAuth2 - is een open protocol wat veilige authorizatie regeld op een simpele en  gestandarizeerde manier voor het web, mobile en desktop applicaties.
